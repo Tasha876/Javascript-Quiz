@@ -1,0 +1,119 @@
+/* CSS styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: helvetica, calibri, segoe, arial, "sans serif";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+}
+
+main {
+  padding: 50px;
+  font-family: helvetica, calibri, segoe, arial, "sans serif";
+  font-size: 16px;
+  background-color:  white;
+  width: 50%;
+}
+
+#quiz {
+  counter-reset: answers;
+}
+
+ol.answers {
+  padding: 0;
+  margin: 0;
+  list-style-type: lower-alpha;
+  list-style-position: inside
+}
+
+.answers li {
+  cursor: pointer;
+  padding: 1em;
+  margin: 0;
+  border-radius: 3px;
+  //background-color: darkBlue;
+  color: darkBlue;
+  cursor: pointer;
+}
+
+.answers li:hover {
+background-color: lightYellow;
+}
+
+.answers li.correct:active {
+  background-color: lightGreen;
+  color: white;
+}
+
+code, pre {
+padding: 0;
+margin: 0;
+}
+
+.answers li:not(.correct):active {
+  background-color: pink;
+  color: white;
+}
+
+#timer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 3em;
+  text-align: right;
+  color: slateGrey;
+}
+
+.almost_up {
+  color: darkRed !important;
+  animation-name: blinking_text;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.near_end {
+  color: goldenRod !important;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes blinking_text {
+     0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#final-score h3, .question h3 {
+  color: darkBlue;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.question h3 {
+  background-color: lightBlue;
+}
+
+#final-score h3 {
+  display: table;
+  vertical-align: middle;
+  background-color: pink;
+}

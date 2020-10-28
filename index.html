@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"></script>
+    <title>HTML CSS JS</title>
+  </head>
+  <body>
+<main>
+  <section id = "timer">
+    00:00
+  </section>
+<section id = "quiz">
+<!----------------------------------------------------------->
+
+<div class = "question">
+	<h3>How are single line comments in Javascript are denoted?</h3>
+    <ol class = "answers">
+    <li><code>/* This is a comment */</pre></code></li>
+    <li><code>&lt;!-- This is a comment --&gt;</pre></code></li>
+    <li class = "correct"><code>// This is a comment</pre></code></li>
+    <li>all of the above</li>
+    <li>only a and c</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class = question>
+	<h3>In the following Javascript code "<code>window.alert('Hello world!')</pre></code>", "<code>alert</pre></code>" is the... </h3>
+	<ol class = "answers">
+    <li>method</li>
+    <li>object</li>
+    <li>element</li>
+    <li>action</li>
+    <li class = "correct">a and d</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+
+<div class="question">
+	<h3>Which Javascript code snippit will display the numbers 1 to 10 in the console?</h3>
+	<code>
+
+	<ol class = "answers">
+	<li>
+	function count() {
+		var i = 1;
+		while (i &lt; 11) {
+			document.write(i);
+		} i++;
+	}
+	</pre></code>
+	</li>
+
+	
+	<li class = "correct">
+	<code><pre>
+function count(i) {
+	if (i &gt; 10) return;
+	else {
+	console.log(i);
+	count(i + 1);
+	}
+}	
+	</pre></code></pre>
+	</li>
+	
+	<li>
+	<code><pre>
+	function count() {
+for (var i = 1; i &lt;= 10) {
+	console.log(i);
+	}
+}
+	</pre></code></pre>
+	</li>
+	
+	<li>all of the above</li>
+	
+	<li>only b and c</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="question">
+	<h3>True or false: in the below Javascript snippet, "<code>Bart</code>" is not a key.
+    <code><pre>
+var student = {
+	firstName: Bart,
+	lastName: Simpson, 
+	email: b_sim342@yahoo.com
+}
+    </pre></code>
+  </h3>
+
+  <ol class = "answers">
+	<li class = "correct">true</li>
+	<li>false</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="question">
+	<h3>The "this" keyword refers to... </h3>
+	
+	<ol class = "answers">
+	<li>the owner of the method</li>
+	<li>the HTML element that received the event</li>
+	<li>the owner of the function</li>
+	<li class = "correct">all of the above</li>
+	<li>none of the above</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="question">
+	<h3>Which of the following code displays proper syntax for creating a function?</h3>
+	
+	<ol class = "answers">
+	<li>
+	<code><pre>
+function mult(x, y) {
+	return x * y;
+}
+	</pre></code></pre>
+	</li>
+	
+	<li>
+	<code><pre>
+var mult = function(x, y) {
+	return x * y;
+	}
+	</pre></code></pre>
+	</li>
+	
+	<li>
+	<code>
+	var mult = x * y;
+	</code>
+	</li>
+	
+	<li>all of the above</li>
+	
+	<li class = "correct">only a and b</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="question">
+	<h3>True or false: the following code will return the sum of two numbers.
+	
+	<code><pre>
+function add(x, y) {
+	x + y;
+}
+	</pre></code></pre>
+	</h3>
+
+	<ol class = "answers">
+	<li>true</li>
+	<li class = "correct">false</li>
+	</ol>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="question">
+	<h3>True or false: the following code will assign a random number from 1 to 10 to the variable x.
+	
+	<code>
+	var x = (Math.random() * 10);
+	</pre></code>
+	</h3>
+
+	<ol class = "answers">
+	<li>true</li>
+	<li class = "correct">false</li>
+	
+	</ol>
+</div>
+</section>
+
+<div id = "final-score">
+  <h3>
+    That's it, your score is <span id = "score">_____</span>.
+  </h3>
+  <form>
+  <label>Enter your initials here:</label>
+  <input id = "initials" type = "text">
+  <button type = "submit" id = "submit">Submit</button>
+  <textarea rows="10"></textarea>
+  </form>
+  
+</div>  
+
+
+
+    </section>
+</main>
+  </body>
+</html>
