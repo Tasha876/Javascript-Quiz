@@ -34,7 +34,7 @@ Should you find an issue with this webpage, please create a [new issue](https://
 
 <a name="acknowledge"></a>
 ## 3. Authors and Acknowledgement
-The code in this project was created by Natasha Fray. The idea for the project was from the instructors at the [U of T Coding Bootcamp](https://bootcamp.learn.utoronto.ca/)
+The code in this project was created by Natasha Fray. The idea for the project was from the instructors at the [U of T Coding Bootcamp](https://bootcamp.learn.utoronto.ca/).
 
 <a name="license"></a>
 ## 6. License
