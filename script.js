@@ -130,7 +130,7 @@ function addInitials() {
   if (initials.value) {
     highscores.push([parseInt(time), initials.value]);
     // not sure why I had to do this for the array to sort properly, but it works now :)
-    highscores.sort(([a, b], [c, d]) => c - a || d - b);
+    highscores.sort(([a, b], [c, d]) => c - a || b - d);
     initials.value = "";
   } 
 
