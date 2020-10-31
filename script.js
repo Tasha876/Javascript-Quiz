@@ -105,7 +105,7 @@ function init() {
   }
   renderHighscores();
 
-  if (time <= 0 || time < highscores[9][0]) {
+  if (time <= 0 || (time < highscores[9] && time < highscores[9][0])) {
     hasHighscore.innerText = "Better luck next time."
   }
 }
@@ -119,6 +119,7 @@ function renderHighscores() {
   highscoreList.innerText = "";
   highscores.sort();
   highscores.reverse();
+  console.log(highscores);
 
   for (var i = 0; i < 10; i++) {
     var li = document.createElement("li");
