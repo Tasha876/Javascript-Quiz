@@ -1,5 +1,5 @@
 # Javascript-Quiz
-A short interactive Javascript Quiz
+A short interactive Javascript Quiz.
 
 ## Table of Contents
 1. [ Description ](#desc)
@@ -25,7 +25,7 @@ GIF of the webpage
 ![GIF of the webpage](in_action.gif)
 
 <a name="deployed"></a>
-## 5. Deployed Webpage
+## 3. Deployed Webpage
 [The deployed site](https://tasha876.github.io/Javascript-Quiz/index.html), hosted by GitHub Pages.
 
 <a name="support"></a>
@@ -33,7 +33,7 @@ GIF of the webpage
 Should you find an issue with this webpage, please create a [new issue](https://github.com/Tasha876/Javascript-Quiz/issues) on my GitHub repository.
 
 <a name="acknowledge"></a>
-## 3. Authors and Acknowledgement
+## 5. Authors and Acknowledgement
 The code in this project was created by Natasha Fray. The idea for the project was from the instructors at the [U of T Coding Bootcamp](https://bootcamp.learn.utoronto.ca/).
 
 <a name="license"></a>
