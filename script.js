@@ -117,8 +117,6 @@ function storeHighscores() {
 function renderHighscores() {
 
   highscoreList.innerText = "";
-  highscores.sort();
-  highscores.reverse();
   console.log(highscores);
 
   for (var i = 0; i < 10; i++) {
@@ -130,7 +128,9 @@ function renderHighscores() {
 
 function addInitials() {
   if (initials.value) {
-    highscores.push([time, initials.value]);
+    highscores.push([parseInt(time), initials.value]);
+    // not sure why I had to do this for the array to sort properly, but it works now :)
+    highscores.sort(([a, b], [c, d]) => c - a || d - b);
     initials.value = "";
   } 
 
