@@ -117,7 +117,6 @@ function storeHighscores() {
 function renderHighscores() {
 
   highscoreList.innerText = "";
-  console.log(highscores);
 
   for (var i = 0; i < 10; i++) {
     var li = document.createElement("li");
