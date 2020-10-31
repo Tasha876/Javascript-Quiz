@@ -1,28 +1,31 @@
 /* CSS styles */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  padding: 0;
+  margin: 0;
+  color: lightGrey;
+  background-color: darkblue;
 }
 
 body {
-  font-family: helvetica, calibri, segoe, arial, "sans serif";
-  font-size: 16px;
+  font-family: "IBM Plex Mono", "monospace";
+  font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: white;
 }
 
 main {
-  padding: 50px;
-  font-family: helvetica, calibri, segoe, arial, "sans serif";
-  font-size: 16px;
-  background-color:  white;
-  width: 50%;
+  padding-top: 50px;
+  width: calc(100vw - 20em);
+  height: 100vh;
 }
 
 #quiz {
@@ -33,35 +36,45 @@ ol.answers {
   padding: 0;
   margin: 0;
   list-style-type: lower-alpha;
-  list-style-position: inside
+  list-style-position: inside;
+  
+}
+
+.Q {
+  min-height: 5em;
 }
 
 .answers li {
   cursor: pointer;
-  padding: 1em;
+  padding: 5px;
   margin: 0;
   border-radius: 3px;
-  //background-color: darkBlue;
-  color: darkBlue;
   cursor: pointer;
 }
 
 .answers li:hover {
-background-color: lightYellow;
+background-color: lightGrey;
+color: darkblue;
 }
 
 .answers li.correct:active {
-  background-color: lightGreen;
+  background-color: green;
   color: white;
 }
+
+
 
 code, pre {
 padding: 0;
 margin: 0;
 }
 
+pre {
+  margin-top: -1em;
+}
+
 .answers li:not(.correct):active {
-  background-color: pink;
+  background-color: red;
   color: white;
 }
 
@@ -71,7 +84,7 @@ margin: 0;
   right: 15px;
   font-size: 3em;
   text-align: right;
-  color: slateGrey;
+  color: lightGrey;
 }
 
 .almost_up {
@@ -79,6 +92,10 @@ margin: 0;
   animation-name: blinking_text;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
+}
+
+.stop_blinking {
+  animation: none;
 }
 
 .near_end {
@@ -89,31 +106,113 @@ margin: 0;
   display: none;
 }
 
-@keyframes blinking_text {
-     0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#final-score h3, .question h3 {
-  color: darkBlue;
+h1, h2, h3 {
+  color:white;
   padding: 0;
   margin: 0;
   position: relative;
+  display: inline-block;
 }
 
-.question h3 {
-  background-color: lightBlue;
+form input[type = "text"] {
+  width: 3rem;
+  font-size: large;
 }
 
-#final-score h3 {
-  display: table;
-  vertical-align: middle;
+.tab {
+  display: inline-block; 
+  width: 3rem;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+button {
+  font-family: "IBM Plex Mono", "monospace";
+  margin: auto;
+  display: block;
+  background-color: darkRed;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+button:disabled {
   background-color: pink;
+  color: white;
 }
+
+button.play {
+  margin: 1em auto;
+  font-size: 2em;
+}
+
+button a, button a:hover, button a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#hasHighscore {
+  display: inline-block;
+  width: auto;
+}
+
+.answers pre {
+  display: inline-block;
+  vertical-align: top;
+}
+
+h3 pre, h3 code{
+  font-family: "IBM Plex Mono", "monospace";
+}
+
+h3 pre {
+  display: block;
+  margin-left: 5em;
+}
+
+/* makes questions fade in */
+.question {
+  animation: fadeIn .25s ease-in;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+}
+
+.fade-out {
+  animation: fadeIn 0.25s ease-in;
+  animation-direction: reverse;;
+}
+
+hr {
+  border-bottom: 1px solid white;
+}
+
+@keyframes blinking_text {
+  0% {
+     opacity: 1;
+ }
+ 50% {
+     opacity: 0;
+ }
+ 100% {
+     opacity: 1;
+ }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
