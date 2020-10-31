@@ -20,7 +20,8 @@ The user has up to 2 minutes to answer 8 questions. Every question the user gets
 
 <a name="visuals"></a>
 ## 2. Visuals
-GIF of the webpage
+GIF of the webpage 
+
 ![GIF of the webpage](in_action.gif)
 
 <a name="deployed"></a>
